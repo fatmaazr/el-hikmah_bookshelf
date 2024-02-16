@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-    background-image: url('/images/banner.png');
+    background-image: url('../images/banner.png');
     height: 50vh;
     background-size: cover;
     display: flex;
@@ -112,7 +112,7 @@ body {
     height: 20px;
     position: absolute;
     margin-top: 100px;
-    background: url(/images/pen-to-square-regular.svg);
+    background: url('../images/pen-to-square-regular.svg');
     cursor: pointer;
 }
 
@@ -208,7 +208,7 @@ h3 {
 }
 
 .check-button {
-    background: url('/images/circle-check-regular.svg');
+    background: url('../images/circle-check-regular.svg');
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -216,25 +216,25 @@ h3 {
 }
 
 .check-button:hover {
-    background: url('/images/circle-check-solid.svg');
+    background: url('../images/circle-check-solid.svg');
 }
 
 .trash-button {
     width: 20px;
     height: 24px;
-    background: url('/images/trash-can-regular.svg');
+    background: url('../images/trash-can-regular.svg');
     cursor: pointer;
     margin: 5px;
 }
 
 .trash-button:hover {
-    background: url('/images/trash-can-solid.svg');
+    background: url('../images/trash-can-solid.svg');
 }
 
 .undo-button {
     width: 20px;
     height: 20px;
-    background: url('/images/rotate-left-solid.svg');
+    background: url('../images/rotate-left-solid.svg');
     cursor: pointer;
     margin: 5px;
 }
@@ -247,7 +247,7 @@ h3 {
 }
 
 .close-button {
-    background: url(/images/xmark-solid.svg);
+    background: url('../images/xmark-solid.svg');
     width: 20px;
     height: 25px;
     cursor: pointer;
