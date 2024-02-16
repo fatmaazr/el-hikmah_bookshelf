@@ -1,0 +1,23 @@
+.sub-main {
+    width: 90%;
+    margin-inline: auto;
+    max-width: 1100px;
+}
+
+.main-button { 
+    padding: 8px 12px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.input-input {
+    padding: 8px;
+    background-color: var(--green-transparent);
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: var(--light-gray-transparent);
+}

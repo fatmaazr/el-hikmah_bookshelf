@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El-Hikmah Bookshelf</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">El-Hikmah Bookshelf</h1>
+        <p class="subtitle">Rak Buku Online untuk Membuat Daftar Bukumu Menjadi Lebih Rapi</p>
+    </div>
+    <div class="main">
+        <div class="sub-main input-book-profile">
+            <div class="input-book">
+                <h2>Tambahkan Buku</h2>
+                <form class="form-input">
+                    <div class="input">
+                        <label class="label-input" for="input-title">Judul :</label>
+                        <input class="input-input" id="input-title" type="text" placeholder="Masukkan judul buku..." required>
+                    </div>
+                    <div class="input">
+                        <label class="label-input" for="input-author">Penulis :</label>
+                        <input class="input-input" id="input-author" type="text" placeholder="Masukkan nama penulis..." required>
+                    </div>
+                    <div class="input">
+                        <label class="label-input" for="input-date">Memiliki sejak :</label>
+                        <input class="input-input" id="input-date" type="date" required>
+                    </div>
+                    <button class="main-button" id="add" type="submit">Tambahkan</button>
+                </form>
+            </div>
+            <div class="profile">
+                <div class="user-info">
+                    <h2>Profil</h2>
+                    <img  class="photo-profile" id="output" src="images/profile-photo-placeholder.jpg" alt="profile-photo">
+                    <input type="file" id="fileInputButton" style="display: none;" accept="image/*">
+                    <button class="edit-img" onclick="document.getElementById('fileInputButton').click()"></button>
+                    <input type="text" class="username" placeholder="Ketik namamu di sini">
+                </div>
+                <div class="book-count">
+                    <div class="count-read">
+                        <p class="book-total-read">0</p>
+                        <p class="book-status">Sudah dibaca</p>
+                    </div>
+                    <div class="count-unread">
+                        <p class="book-total-unread">0</p>
+                        <p class="book-status">Belum dibaca</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sub-main searching">
+            <div class="search">
+                <div class="search-book">
+                    <input type="text" class="search-book-title input-input" placeholder="Cari buku...">
+                    <button class="main-button" id="search-button">Cari</button>
+                </div>
+            </div>
+        </div>
+        <div class="sub-main finished-unfinished">
+            <div class="unfinished-book">
+                <h3 class="unread">Belum Dibaca</h3>
+                <div class="unfinished">
+                    
+                </div> 
+            </div>
+            <div class="finished-book">
+                <h3 class="read">Sudah Dibaca</h3>
+                <div class="finished">
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>El-Hikmah Bookshelf &copy 2024</p>
+    </div>
+
+    <script src="scripts/script.js" type="module"></script>
+    <script src="scripts/change-image.js" type="module"></script>
+    <script src="dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
