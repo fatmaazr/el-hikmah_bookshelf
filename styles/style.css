@@ -340,4 +340,8 @@ textarea::placeholder {
         flex-direction: column;
         gap: 12px;
     }
+
+    textarea {
+        height: 200px;
+    }
 }
